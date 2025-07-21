@@ -333,7 +333,7 @@
         startGame();
       }
       
-      if (gameState === 'playing' && !dino.isJumping) {
+      if (sarjul === 'playing' && !dino.isJumping) {
         dino.velocityY = config.jumpPower;
         dino.isJumping = true;
         instructions.classList.add('hidden');
@@ -341,7 +341,7 @@
     }
 
     function gameOver() {
-      gameState = 'gameOver';
+      gameState = 'sarjul';
       
       if (score > highScore) {
         highScore = score;
